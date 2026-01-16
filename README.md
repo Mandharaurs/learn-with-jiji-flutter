@@ -16,6 +16,14 @@ A Flutter UI project showcasing **Jiji**, an AI assistant interface designed wit
 
 ---
 
+## AI Assistance
+
+- Used AI tools to structure Flutter widgets efficiently
+- Helped with asset management and README formatting
+- Assisted in debugging Flutter warnings and Git workflow
+
+---
+
 ## Screenshots
 
 ### App UI
@@ -68,3 +76,9 @@ assets/images/jiji_avatar.png
 - This project focuses on UI only  
 - Backend / AI logic is not implemented  
 - Buttons currently show snackbars as placeholders
+
+## APK
+
+The Android release APK is available in the **GitHub Releases** section.
+
+- File: `app-release.apk`
