@@ -16,9 +16,13 @@ A Flutter UI project showcasing **Jiji**, an AI assistant interface designed wit
 
 ---
 
-## Screenshot
+## Screenshots
 
-![Jiji UI](assets/images/jiji_avatar.png)
+### App UI
+![Jiji App UI](assets/images/jiji_ui.png)
+
+### Avatar Asset
+![Jiji Avatar](assets/images/jiji_avatar.png)
 
 ---
 
