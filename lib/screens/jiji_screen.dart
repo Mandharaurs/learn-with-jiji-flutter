@@ -29,7 +29,6 @@ class JijiScreen extends StatelessWidget {
 
               const SizedBox(height: 20),
 
-              // ✅ Avatar Image from assets
               Container(
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,

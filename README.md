@@ -1,4 +1,4 @@
-# Learn with Jiji 🤖✨
+# Learn with Jiji 
 
 A Flutter UI project showcasing **Jiji**, an AI assistant interface designed with a clean, modern layout.
 
