@@ -29,13 +29,26 @@ class JijiScreen extends StatelessWidget {
 
               const SizedBox(height: 20),
 
-              CircleAvatar(
-                radius: 60,
-                backgroundColor: Colors.grey.shade300,
-                child: Icon(
-                  Icons.person,
-                  size: 60,
-                  color: Colors.grey.shade700,
+              // ✅ Avatar Image from assets
+              Container(
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withValues(alpha: 0.15),
+                      blurRadius: 12,
+                      spreadRadius: 2,
+                    ),
+                  ],
+                ),
+                child: CircleAvatar(
+                  radius: 62,
+                  backgroundColor: Colors.teal.shade100,
+                  child: const CircleAvatar(
+                    radius: 58,
+                    backgroundImage:
+                        AssetImage('assets/images/jiji_avatar.png'),
+                  ),
                 ),
               ),
 
@@ -94,6 +107,7 @@ class JijiScreen extends StatelessWidget {
                       const SizedBox(height: 16),
 
                       _resourceCard(
+                        context: context,
                         icon: Icons.slideshow,
                         title: "Presentation on RAG",
                         subtitle: "PowerPoint Presentation",
@@ -101,6 +115,7 @@ class JijiScreen extends StatelessWidget {
                       ),
 
                       _resourceCard(
+                        context: context,
                         icon: Icons.play_circle,
                         title: "What is RAG?",
                         subtitle: "YouTube Video",
@@ -124,7 +139,8 @@ class JijiScreen extends StatelessWidget {
     );
   }
 
-  Widget _bullet(String text) {
+  // 🔹 Bullet point widget
+  static Widget _bullet(String text) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 6),
       child: Row(
@@ -137,7 +153,9 @@ class JijiScreen extends StatelessWidget {
     );
   }
 
-  Widget _resourceCard({
+  // 🔹 Resource card with snackbar
+  static Widget _resourceCard({
+    required BuildContext context,
     required IconData icon,
     required String title,
     required String subtitle,
@@ -167,7 +185,14 @@ class JijiScreen extends StatelessWidget {
               ),
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text('$buttonText coming soon'),
+                    duration: const Duration(seconds: 2),
+                  ),
+                );
+              },
               child: Text(buttonText),
             ),
           ],
