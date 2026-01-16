@@ -1,16 +1,66 @@
-# learn_with_jiji
+# Learn with Jiji 🤖✨
 
-A new Flutter project.
+A Flutter UI project showcasing **Jiji**, an AI assistant interface designed with a clean, modern layout.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- AI assistant style UI
+- Circular avatar using asset image
+- Search input field
+- Informational response card
+- Resource cards with action buttons
+- Snackbars on button click (Coming soon)
+- Responsive layout (Web + Mobile)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshot
+
+![Jiji UI](assets/images/jiji_avatar.png)
+
+---
+
+## Tech Stack
+
+- Flutter (Stable)
+- Material UI
+- Dart
+
+---
+
+## How to Run
+
+1. Clone the repository
+```bash
+git clone https://github.com/Mandharaurs/learn-with-jiji-flutter.git
+```
+
+2. Navigate into the project folder
+```bash
+cd learn_with_jiji
+```
+
+3. Install dependencies
+```bash
+flutter pub get
+```
+
+4. Run the app
+```bash
+flutter run
+```
+---
+
+### Assets
+Avatar image location:
+assets/images/jiji_avatar.png
+
+---
+
+### Notes
+
+- This project focuses on UI only  
+- Backend / AI logic is not implemented  
+- Buttons currently show snackbars as placeholders
